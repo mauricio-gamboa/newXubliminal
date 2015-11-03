@@ -1,0 +1,275 @@
+/***************************
+****************************
+Key Frames
+****************************
+***************************/
+
+@-moz-keyframes bounce {
+  0% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  80% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  80% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-o-keyframes bounce {
+  0% {
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20% {
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50% {
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60% {
+    -o-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  80% {
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-ms-keyframes bounce {
+  0% {
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20% {
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50% {
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60% {
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  80% {
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@-moz-keyframes animatedBackgroundRight {
+  to {
+    background-position: 1398px 0;
+  }
+}
+
+@-moz-keyframes animatedBackgroundLeft {
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-webkit-keyframes animatedBackgroundRight {
+  to {
+    background-position: 1398px 0;
+  }
+}
+
+@-webkit-keyframes animatedBackgroundLeft {
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-o-keyframes animatedBackgroundRight {
+  to {
+    background-position: 1398px 0;
+  }
+}
+
+@-o-keyframes animatedBackgroundLeft {
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-ms-keyframes animatedBackgroundRight {
+  to {
+    background-position: 1398px 0;
+  }
+}
+
+@-ms-keyframes animatedBackgroundLeft {
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes animatedBackgroundRight {
+  to {
+    background-position: 1398px 0;
+  }
+}
+
+@keyframes animatedBackgroundLeft {
+  to {
+    background-position: 0 0;
+  }
+}
+
+/*Animate Clouds*/
+
+@-moz-keyframes animatedCloudsRight {
+  to {
+    background-position: 1400px 100%;
+  }
+}
+
+@-moz-keyframes animatedCloudsLeft {
+  to {
+    background-position: 0 100%;
+  }
+}
+
+@-webkit-keyframes animatedCloudsRight {
+  to {
+    background-position: 1400px 100%;
+  }
+}
+
+@-webkit-keyframes animatedCloudsLeft {
+  to {
+    background-position: 0 100%;
+  }
+}
+
+@-o-keyframes animatedCloudsRight {
+  to {
+    background-position: 1400px 100%;
+  }
+}
+
+@-o-keyframes animatedCloudsLeft {
+  to {
+    background-position: 0 100%;
+  }
+}
+
+@-ms-keyframes animatedCloudsRight {
+  to {
+    background-position: 1400px 100%;
+  }
+}
+
+@-ms-keyframes animatedCloudsLeft {
+  to {
+    background-position: 0 100%;
+  }
+}
+
+@keyframes animatedCloudsRight {
+  to {
+    background-position: 1400px 100%;
+  }
+}
+
+@keyframes animatedCloudsLeft {
+  to {
+    background-position: 0 100%;
+  }
+}
