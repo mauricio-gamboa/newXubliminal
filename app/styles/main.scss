@@ -44,7 +44,7 @@ General Styles
 
 body {
   background-color: white;
-  color: #464646;
+  color: $gray-2;
   font-family: 'Open Sans', sans-serif;
   padding-bottom: 444px;
 
@@ -55,7 +55,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #2b363d;
+  color: $gray-3;
   font-weight: 300;
   line-height: normal;
   margin: 0;
@@ -68,12 +68,12 @@ h2, .h2 {
 a {
   outline: none;
   text-decoration: none;
-  color: #2b363d;
+  color: $gray-3;
 
   &:active, &:hover, &:focus {
     outline: none;
     text-decoration: none;
-    color: #2b363d;
+    color: $gray-3;
   }
 }
 
@@ -91,11 +91,11 @@ strong {
 }
 
 .top-gray-border {
-  border-top: 1px solid #efefef;
+  border-top: 1px solid $gray-4;
 }
 
 .bottom-gray-border {
-  border-bottom: 1px solid #efefef;
+  border-bottom: 1px solid $gray-4;
 }
 
 .ng-enter {
@@ -147,14 +147,14 @@ strong {
       span {
         width: 8px;
         height: 8px;
-        background-color: #afb5b9;
+        background-color: $gray-5;
         border: none;
         margin: 0 6px;
       }
 
       &.active {
         span {
-          background-color: #30d824;
+          background-color: $green-1;
           height: 14px;
           width: 14px;
         }

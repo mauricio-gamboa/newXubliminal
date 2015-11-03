@@ -1,5 +1,5 @@
 .mobile-trigger {
-  background: url("../images/mobile-trigger.png") no-repeat scroll 0 (-58px / 29px) auto rgba(0, 0, 0, 0);
+  background: url("../images/mobile-trigger.png") no-repeat scroll 0 (-58px / 29px) auto $transparent-black;
   height: 29px;
   width: 29px;
   -webkit-transition-property: margin-top;
@@ -20,7 +20,8 @@
 }
 
 .dark .mobile-trigger {
-  background-position: 0 0px;
+  background-position: 0 0;
+
   &:hover {
     background-position: 0 -29px;
   }
@@ -31,20 +32,23 @@
   padding-left: 0;
   list-style: none;
   overflow: hidden;
+
   li {
     float: left;
+
     a {
       color: rgba(255, 255, 255, 0.6);
       font-size: 14px;
       text-transform: uppercase;
       &:hover {
-        color: #FFFFFF;
+        color: white;
       }
     }
+
     &.active a {
-      color: #FFFFFF;
+      color: white;
       &:hover {
-        color: #FFFFFF;
+        color: white;
       }
     }
   }
@@ -73,14 +77,16 @@
     -o-transition-delay: 0s;
     transition-delay: 0s;
   }
+
   &.active a {
-    color: #FFFFFF;
+    color: white;
   }
 }
 
 .contact-nav .xub-nav li {
   margin-left: 14px;
   line-height: 29px;
+
   a {
     background: url("../images/contact-logos.png") no-repeat 0 0;
     display: inline-block;
@@ -89,20 +95,26 @@
     vertical-align: middle;
     width: 28px;
   }
+
   &.contact-menu-item-1 a {
     background-position: 0 -168px;
+
     &:hover {
       background-position: 0 -196px;
     }
   }
+
   &.contact-menu-item-2 a {
     background-position: 0 -224px;
+
     &:hover {
       background-position: 0 -252px;
     }
   }
+
   &.contact-menu-item-3 a {
     background-position: 0 -280px;
+
     &:hover {
       background-position: 0 -308px;
     }
@@ -111,7 +123,7 @@
 
 .lang-nav {
   display: none;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid $gray-16 ;
   padding-left: 20px;
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
@@ -125,9 +137,11 @@
   -webkit-transition-delay: 0s;
   -o-transition-delay: 0s;
   transition-delay: 0s;
+
   ul {
     background: url("../images/dot-2.png") no-repeat 50% 50%;
   }
+
   .xub-nav li {
     margin-left: 26px;
     &:first-child {
@@ -140,7 +154,7 @@
   .mm-header {
     height: 65px;
     h1 {
-      background: url("../images/logo-mobile.png") no-repeat scroll 50% 50% rgba(0, 0, 0, 0);
+      background: url("../images/logo-mobile.png") no-repeat scroll 50% 50% $transparent-black;
       height: 100%;
       margin: 0;
       text-indent: -9999px;
@@ -160,7 +174,7 @@
     border: none;
   }
   .mobile-link a span {
-    background: url("../images/contact-logos.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../images/contact-logos.png") no-repeat scroll 0 0 $transparent-black;
     display: inline-block;
     height: 28px;
     margin-right: 9px;
@@ -193,7 +207,7 @@
   }
   .mm-list > li > {
     a, span {
-      color: #ffffff;
+      color: white;
       font-size: 16px;
       text-transform: uppercase;
     }
@@ -201,16 +215,16 @@
   #mm-1.mm-list > li > {
     a {
       &.mm-subclose {
-        color: #ffffff;
+        color: white;
         font-size: 16px;
         text-transform: uppercase;
       }
       font-size: 14px;
-      color: #7f868a;
+      color: $gray-17 ;
     }
     span {
       font-size: 14px;
-      color: #7f868a;
+      color: $gray-17 ;
     }
   }
   .mm-list > li {
@@ -218,23 +232,23 @@
       a, span {
         text-transform: none;
         font-size: 13px;
-        color: #7f868a;
+        color: $gray-17 ;
       }
     }
     > a:hover {
-      color: #3dc0e6;
+      color: $blue-1;
     }
   }
   &.mm-menu {
     .mm-list > li > a {
       &.mm-subopen:after, &.mm-subclose:before {
-        border-color: #3dc0e6;
+        border-color: $blue-1;
       }
     }
     .lang-menu {
       padding: 10px 0;
       a {
-        color: #6f7579;
+        color: $gray-18;
         display: inline-block;
         font-size: 14px;
         margin-bottom: 4px;
@@ -242,7 +256,7 @@
         text-align: center;
         width: 50%;
         span {
-          background-color: #4c5357;
+          background-color: $gray-19;
           border-radius: 100%;
           display: inline-block;
           height: 6px;
@@ -252,12 +266,12 @@
           width: 6px;
         }
         &:first-child {
-          border-right: 1px solid rgba(0, 0, 0, 0.15);
+          border-right: 1px solid $gray-20;
         }
         &.current-lang {
-          color: #3dc0e6;
+          color: $blue-1;
           span {
-            background-color: #3dc0e6;
+            background-color: $blue-1;
             width: 10px;
             height: 10px;
           }
@@ -275,7 +289,7 @@
       }
       &.mm-selected > {
         a:not(.mm-subopen), span {
-          border-left: 10px solid #3dc0e6;
+          border-left: 10px solid $blue-1;
         }
       }
     }

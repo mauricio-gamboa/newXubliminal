@@ -1,6 +1,6 @@
 
 #recent-work {
-  background: url("../../images/shadow-3.png") repeat-x scroll 0 100%, url("../../images/shadow-2.png") repeat-x scroll 0 0, url("../../images/pattern-1.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: url("../../images/shadow-3.png") repeat-x scroll 0 100%, url("../../images/shadow-2.png") repeat-x scroll 0 0, url("../../images/pattern-1.jpg") repeat scroll 0 0 $transparent-black;
   padding: 40px 0;
   text-align: center;
 
@@ -9,7 +9,7 @@
       font-weight: 600;
       font-size: 15px;
       text-transform: uppercase;
-      color: #47565f;
+      color: $gray-7;
       margin-bottom: 15px;
     }
 

@@ -1,7 +1,7 @@
 .dark {
   header {
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 10px -6px #000000;
+    background-color: $transparent-white;
+    box-shadow: 0 0 10px -6px black000;
     border-bottom: none;
     overflow: hidden;
   }
@@ -11,16 +11,17 @@
   .main-nav li {
     a {
       border-bottom: 4px solid transparent;
-      color: #969fa4;
+      color: $gray-13;
     }
+
     &.active a {
-      color: #3dc0e6;
+      color: $blue-1;
     }
   }
 }
 
 #home-services {
-  background-color: #ffffff;
+  background-color: white;
   padding: 90px 0;
   text-align: center;
 
@@ -29,7 +30,7 @@
   }
 
   h2 {
-    color: #47565f;
+    color: $gray-7;
     font-size: 42px;
     margin-bottom: 25px;
 
@@ -39,7 +40,7 @@
 
     & + p {
       font-size: 18px;
-      color: #47565f;
+      color: $gray-7;
       margin: 0;
 
       @media #{$xs} {
@@ -86,7 +87,7 @@
     padding: 29px 0 68px 0;
     float: none;
     width: 100%;
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid $gray-6;
   }
 
   img {
@@ -97,7 +98,7 @@
     font-weight: 600;
     font-size: 15px;
     text-transform: uppercase;
-    color: #47565f;
+    color: $gray-7;
     margin-bottom: 15px;
   }
 
@@ -114,7 +115,7 @@
 }
 
 .home-services p, .home-carousel p {
-  color: #47565f;
+  color: $gray-7;
   font-size: 15px;
   line-height: 25px;
   margin: 0;
@@ -122,7 +123,7 @@
 
 .home-carousel {
   h2 {
-    color: #47565f;
+    color: $gray-7;
     font-size: 42px;
     margin-bottom: 15px;
 
@@ -146,12 +147,12 @@
   span {
     width: 8px;
     height: 8px;
-    background-color: #afb5b9;
+    background-color: $gray-5;
     border: none;
     margin: 0 6px;
   }
   &.active span {
-    background-color: #30d824;
+    background-color: $green-1;
     height: 14px;
     width: 14px;
   }
@@ -163,8 +164,8 @@
 }
 
 #brands {
-  background: url("../images/pattern-2.jpg") repeat-x scroll 0 0 #FFFFFF;
-  border-top: 1px solid #f1f1f1;
+  background: url("../images/pattern-2.jpg") repeat-x scroll 0 0 white;
+  border-top: 1px solid $gray-6;
 }
 
 #brands-wrapper {
@@ -412,7 +413,7 @@
 }
 
 #home-top {
-  background-color: #FFFFFF;
+  background-color: white;
   .clouds {
     position: absolute;
     top: 0;
@@ -493,7 +494,7 @@
   width: 100%;
   text-indent: -9999px;
   a {
-    background: url("../images/scroll-arrow.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../images/scroll-arrow.png") no-repeat scroll 0 0 $transparent-black;
     display: block;
     height: 47px;
     width: 47px;
@@ -600,7 +601,7 @@
         margin-top: 0;
       }
 
-      background-color: rgba(39, 48, 51, 0.3);
+      background-color: $gray-14;
       border: medium none;
       display: block;
       height: 8px;
@@ -608,13 +609,13 @@
       width: 8px;
 
       &:hover {
-        background-color: rgba(39, 48, 51, 0.7);
+        background-color: $gray-15;
       }
 
       &.active {
         height: 14px;
         width: 14px;
-        background-color: #FFFFFF;
+        background-color: white;
       }
     }
   }

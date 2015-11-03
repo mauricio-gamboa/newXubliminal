@@ -1,5 +1,5 @@
 footer {
-  background: url("../images/footer-bg.png") repeat-x scroll 0 0 #373e42;
+  background: url("../images/footer-bg.png") repeat-x scroll 0 0 $gray-10;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -36,22 +36,22 @@ footer {
 }
 
 #tell-us-more {
-  color: #47565f;
+  color: $gray-7;
   padding-top: 110px;
   text-align: center;
   h3 {
-    color: #FFFFFF;
+    color: white;
     font-size: 29px;
     margin-bottom: 0;
   }
   p {
-    color: #9b9ea1;
+    color: $gray-9;
     font-size: 15px;
     line-height: 24px;
     margin: 0 0 20px;
   }
   .btn-2 {
-    box-shadow: 8px 5px 15px -15px #000;
+    box-shadow: 8px 5px 15px -15px black;
     font-size: 17px;
     height: 54px;
     line-height: 54px;
@@ -73,22 +73,26 @@ footer {
 }
 
 #footer-social {
-  background: url("../images/curl.png") no-repeat scroll 50% 0 #373e42;
+  background: url("../images/curl.png") no-repeat scroll 50% 0 $gray-10;
   margin-top: 22px;
   padding-top: 22px;
+
   ul {
-    border-bottom: 1px solid #282e31;
+    border-bottom: 1px solid $gray-11;
     margin: 0;
     padding-bottom: 26px;
     text-align: center;
+
     li {
       display: inline-block;
       margin: 0 9px;
       line-height: 38px;
-      color: #71777b;
+      color: $gray-12;
+
       &.email a {
-        color: #71777b;
+        color: $gray-12;
       }
+
       &:not(.email) a {
         background: url("../images/social-footer-icons.png") no-repeat 0 0;
         height: 38px;
@@ -96,26 +100,34 @@ footer {
         display: inline-block;
         text-indent: -9999px;
       }
+
       &.social-item-1 a {
         background-position: 0 0;
+
         &:hover {
           background-position: 0 -38px;
         }
       }
+
       &.social-item-2 a {
         background-position: 0 -76px;
+
         &:hover {
           background-position: 0 -114px;
         }
       }
+
       &.social-item-3 a {
         background-position: 0 -152px;
+
         &:hover {
           background-position: 0 -190px;
         }
       }
+
       &.social-item-4 a {
         background-position: 0 -228px;
+
         &:hover {
           background-position: 0 -266px;
         }
@@ -127,8 +139,9 @@ footer {
 #handcrafted {
   padding: 20px 0 8px 0;
   text-align: center;
+
   h6 {
-    background: url("../images/handcrafted.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../images/handcrafted.png") no-repeat scroll 0 0 $transparent-black;
     display: inline-block;
     height: 54px;
     text-indent: -9999px;
