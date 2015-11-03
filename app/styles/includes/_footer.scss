@@ -6,6 +6,11 @@ footer {
   width: 100%;
   z-index: 95;
   height: 444px;
+
+  @media #{$xs} {
+    height: auto;
+    position: static;
+  }
 }
 
 .waves-1 {

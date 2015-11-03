@@ -23,20 +23,38 @@
   background-color: #ffffff;
   padding: 90px 0;
   text-align: center;
+
+  @media #{$xs} {
+    padding: 80px 0;
+  }
+
   h2 {
     color: #47565f;
     font-size: 42px;
     margin-bottom: 25px;
-    + p {
+
+    @media #{$xs} {
+      font-size: 36px;
+    }
+
+    & + p {
       font-size: 18px;
       color: #47565f;
       margin: 0;
+
+      @media #{$xs} {
+        font-size: 16px;
+      }
     }
   }
 }
 
 .home-services-wrapper {
   margin-top: 70px;
+
+  @media #{$xs} {
+    margin: 0;
+  }
 }
 
 .home-services {
@@ -45,9 +63,36 @@
   width: 33.33%;
   min-height: 322px;
   position: relative;
+
+  &:last-child {
+    @media #{$xs} {
+      margin-bottom: 0;
+      padding-bottom: 38px;
+      border-bottom: none;
+    }
+
+    .btn-4 {
+      @media #{$xs} {
+        bottom: 0;
+      }
+    }
+  }
+
+  @media #{$small} {
+    padding: 0 10px;
+  }
+
+  @media #{$xs} {
+    padding: 29px 0 68px 0;
+    float: none;
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
   img {
     margin-bottom: 20px;
   }
+
   h4 {
     font-weight: 600;
     font-size: 15px;
@@ -55,14 +100,17 @@
     color: #47565f;
     margin-bottom: 15px;
   }
-}
 
-#recent-work .item h4 {
-  font-weight: 600;
-  font-size: 15px;
-  text-transform: uppercase;
-  color: #47565f;
-  margin-bottom: 15px;
+  .btn-4 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -19px;
+
+    @media #{$xs} {
+      bottom: 29px;
+    }
+  }
 }
 
 .home-services p, .home-carousel p {
@@ -72,26 +120,26 @@
   margin: 0;
 }
 
-.home-services .btn-4 {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -19px;
-}
+.home-carousel {
+  h2 {
+    color: #47565f;
+    font-size: 42px;
+    margin-bottom: 15px;
 
-#recent-work {
-  background: url("../images/shadow-3.png") repeat-x scroll 0 100%, url("../images/shadow-2.png") repeat-x scroll 0 0, url("../images/pattern-1.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
-  padding: 40px 0;
-  text-align: center;
-  .owl-controls {
-    margin-top: 0;
+    @media #{$xs} {
+      font-size: 36px;
+    }
   }
-}
 
-.home-carousel h2 {
-  color: #47565f;
-  font-size: 42px;
-  margin-bottom: 15px;
+  .item {
+    width: 520px;
+    margin: 0 auto;
+
+    @media #{$xs} {
+      margin: 0;
+      width: 100%;
+    }
+  }
 }
 
 .owl-pagination .owl-page {
@@ -109,65 +157,9 @@
   }
 }
 
-.home-carousel .item {
-  width: 520px;
-  margin: 0 auto;
-}
-
-#recent-work .item {
-  img {
-    margin: 0 auto;
-  }
-  .example {
-    margin-bottom: 15px;
-    cursor: pointer;
-  }
-  .logo {
-    margin: 0 auto;
-  }
-}
-
-#clients {
-  background-color: #FFFFFF;
-  padding: 70px 0;
-  text-align: center;
-  h2 {
-    margin-bottom: 50px;
-  }
-  .item {
-    width: 600px;
-  }
-}
-
 #carousel-clients {
   background: url("../images/blockquote.png") no-repeat 50% 0;
   padding: 90px 0 0 0;
-}
-
-#clients {
-  blockquote {
-    border: none;
-    font-size: 17px;
-    line-height: 29px;
-    margin: 0;
-  }
-  .item > div {
-    background: url("../images/sep-1.png") no-repeat 50% 0;
-    margin-top: 35px;
-    padding-top: 30px;
-    p {
-      color: #747e84;
-      font-size: 13px;
-      line-height: 19px;
-      &:first-child {
-        text-transform: uppercase;
-        font-weight: 600;
-      }
-    }
-  }
-  .carousel-indicators {
-    margin-top: 45px;
-  }
 }
 
 #brands {
@@ -419,62 +411,6 @@
   }
 }
 
-#brands-bottom {
-  border-top: 1px solid #f1f1f1;
-  padding: 40px 0;
-  > {
-    div {
-      float: left;
-      width: 25%;
-      height: 94px;
-      line-height: 94px;
-      border-right: 1px solid #f1f1f1;
-      text-align: center;
-      &:first-child {
-        text-align: left;
-      }
-      &:last-child {
-        border-right: none;
-        text-align: right;
-      }
-      > span {
-        background: url("../images/brands-bottom-icons.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-        display: inline-block;
-        height: 43px;
-        padding-left: 54px;
-        text-align: left;
-        vertical-align: middle;
-        > {
-          * {
-            display: block;
-            line-height: 23px;
-            color: #47565f;
-          }
-          strong {
-            font-size: 24px;
-            font-weight: 700;
-          }
-          span {
-            font-size: 14px;
-          }
-        }
-      }
-    }
-    .brand-bottom-1 > span {
-      background-position: 0 0;
-    }
-    .brand-bottom-2 > span {
-      background-position: 0 -43px;
-    }
-    .brand-bottom-3 > span {
-      background-position: 0 -86px;
-    }
-    .brand-bottom-4 > span {
-      background-position: 0 -129px;
-    }
-  }
-}
-
 #home-top {
   background-color: #FFFFFF;
   .clouds {
@@ -585,51 +521,96 @@
   width: 100%;
   left: 0;
   top: 0;
+
+  @media #{$xs} {
+    background: url("../images/home/more-clouds.png") no-repeat 50% 220px;
+  }
 }
 
 #home-carousel {
   margin-top: 70px;
+
+  @media #{$xs} {
+    margin-top: 60px;
+  }
+
   .item {
     text-align: center;
+
+    h3 {
+      @media #{$xs} {
+        font-size: 16px;
+      }
+    }
+
+    &:nth-child(5) {
+      h3 {
+        @media #{$xs} {
+          margin-top: -35px;
+        }
+      }
+    }
+
     > div {
       height: auto;
     }
+
     .item-wrapper {
       position: relative;
       height: 100%;
     }
+
     img {
       margin-top: 105px;
+
+      @media #{$xs} {
+        max-width: 100%;
+        margin-top: 20px;
+      }
     }
+
     .btn-5 {
       margin: 60px auto 0 auto;
+
+      @media #{$xs} {
+        margin-top: 20px;
+      }
     }
   }
+
   .carousel-indicators {
     bottom: auto;
     left: auto;
-    margin: 0;
-    width: auto;
     right: 0;
     top: 50%;
-    margin-top: -123px;
+    margin: -123px 0 0 0;
     width: 14px;
+
+    @media #{$xs} {
+      display: none !important;
+    }
+
     li {
+
       &:last-child {
         margin-bottom: 0;
       }
+
       &:first-child {
         margin-top: 0;
       }
+
       background-color: rgba(39, 48, 51, 0.3);
       border: medium none;
       display: block;
       height: 8px;
       margin: 15px auto;
       width: 8px;
+
       &:hover {
         background-color: rgba(39, 48, 51, 0.7);
       }
+
       &.active {
         height: 14px;
         width: 14px;
@@ -640,9 +621,11 @@
 }
 
 .carousel-fade {
+
   .carousel-control {
     z-index: 2;
   }
+
   .carousel-inner {
     .item {
       opacity: 0;
@@ -650,14 +633,17 @@
       -webkit-transition-property: opacity;
       transition-property: opacity;
     }
+
     .active {
       opacity: 1;
+
       &.left, &.right {
         left: 0;
         opacity: 0;
         z-index: 1;
       }
     }
+
     .next.left, .prev.right {
       opacity: 1;
     }

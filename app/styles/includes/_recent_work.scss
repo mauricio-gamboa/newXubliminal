@@ -1,0 +1,35 @@
+
+#recent-work {
+  background: url("../../images/shadow-3.png") repeat-x scroll 0 100%, url("../../images/shadow-2.png") repeat-x scroll 0 0, url("../../images/pattern-1.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  padding: 40px 0;
+  text-align: center;
+
+  .item {
+    h4 {
+      font-weight: 600;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: #47565f;
+      margin-bottom: 15px;
+    }
+
+    img {
+      margin: 0 auto;
+    }
+    .example {
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+    .logo {
+      margin: 0 auto;
+    }
+  }
+
+  .owl-controls {
+    margin-top: 0;
+
+    @media #{$xs} {
+      display: none !important;
+    }
+  }
+}

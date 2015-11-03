@@ -7,13 +7,23 @@ $fa-font-path: "../bower_components/font-awesome/fonts/";
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
+@import "includes/colors";
+
 @import "includes/animations";
 
 @import "includes/buttons";
 
+@import "includes/responsive";
+
 @import "includes/header";
 
 @import "includes/navigation";
+
+@import "includes/brands_bottom";
+
+@import "includes/recent_work";
+
+@import "includes/clients";
 
 @import "includes/home";
 
@@ -27,16 +37,21 @@ General Styles
 
 .browsehappy {
   margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
+  background: $gray-1;
+  color: black;
   padding: 0.2em 0;
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: white;
   color: #464646;
   font-family: 'Open Sans', sans-serif;
   padding-bottom: 444px;
+
+  @media #{$xs} {
+    padding-bottom: 0;
+    overflow-x: hidden;
+  }
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -68,10 +83,6 @@ p {
 
 strong {
   font-weight: normal;
-}
-
-.show-xs, .show-s, .show-m, .show-xl {
-  display: none;
 }
 
 .sticky-cover {
@@ -130,24 +141,24 @@ strong {
   }
 }
 
-.logo {
-  a {
-    background: url("../images/logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    display: block;
-    height: 29px;
-    text-indent: -9999px;
-    width: 155px;
-    -webkit-transition-property: width;
-    -o-transition-property: width;
-    transition-property: width;
-    -webkit-transition-duration: 0.4s;
-    -o-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    -webkit-transition-timing-function: ease;
-    -o-transition-timing-function: ease;
-    transition-timing-function: ease;
-    -webkit-transition-delay: 0s;
-    -o-transition-delay: 0s;
-    transition-delay: 0s;
+.owl-controls {
+  .owl-pagination {
+    .owl-page {
+      span {
+        width: 8px;
+        height: 8px;
+        background-color: #afb5b9;
+        border: none;
+        margin: 0 6px;
+      }
+
+      &.active {
+        span {
+          background-color: #30d824;
+          height: 14px;
+          width: 14px;
+        }
+      }
+    }
   }
 }

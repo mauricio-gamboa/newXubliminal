@@ -1,0 +1,52 @@
+#clients {
+  background-color: #FFFFFF;
+  padding: 70px 0;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  .item {
+    width: 600px;
+
+    > div {
+      background: url("../images/sep-1.png") no-repeat 50% 0;
+      margin-top: 35px;
+      padding-top: 30px;
+
+      p {
+        color: #747e84;
+        font-size: 13px;
+        line-height: 19px;
+
+        &:first-child {
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+      }
+    }
+
+    @media #{$xs} {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  blockquote {
+    border: none;
+    font-size: 17px;
+    line-height: 29px;
+    margin: 0;
+  }
+
+  .carousel-indicators {
+    margin-top: 45px;
+  }
+
+  .owl-controls {
+    @media #{$xs} {
+      display: none !important;
+    }
+  }
+}
