@@ -26,6 +26,14 @@ angular
         templateUrl: 'views/work.html'
       })
 
+      .when('/services', {
+        templateUrl: 'views/services.html'
+      })
+
+      .when('/services/:service', {
+        templateUrl: 'views/services.html'
+      })
+
       .otherwise({
         redirectTo: '/'
       });

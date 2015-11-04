@@ -139,3 +139,46 @@
     }
   }
 }
+
+#services-gallery {
+  background-color: #ffffff;
+  padding: 50px 0;
+
+  @media #{$xs} {
+    padding: 32px 0 30px 0;
+  }
+
+  h2 {
+    color: #47565f;
+    margin-bottom: 50px;
+    text-align: center;
+
+    @media #{$xs} {
+      margin-bottom: 30px;
+    }
+  }
+
+  .gallery {
+    .carousel-indicators {
+      @media #{$xs} {
+        margin-top: 34px;
+      }
+    }
+  }
+
+  .gallery-item {
+    width: 100%;
+    float: none;
+
+    @media #{$xs} {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+#the-services-gallery .owl-controls,
+#recent-work .owl-controls,
+#clients .owl-controls {
+  display: none !important;
+}
