@@ -29,6 +29,12 @@ $fa-font-path: "../bower_components/font-awesome/fonts/";
 
 @import "includes/footer";
 
+@import "includes/page_phrase";
+
+@import "includes/gallery";
+
+@import "includes/work_page";
+
 /***************************
 ****************************
 General Styles
@@ -160,5 +166,35 @@ strong {
         }
       }
     }
+  }
+}
+
+#page-subtitle {
+  background-color: #fff;
+  color: #636363;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: normal;
+  padding: 30px 0;
+  text-align: center;
+
+  @media #{$xs} {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  h2 {
+    font-size: 45px;
+    color: #636363;
+
+    @media #{$xs} {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    color: #636363;
+    margin: 0;
+    line-height: 32px;
   }
 }

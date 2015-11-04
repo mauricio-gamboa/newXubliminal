@@ -67,3 +67,27 @@ header {
     }
   }
 }
+
+.dark {
+  header {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px -6px #000000;
+    border-bottom: none;
+    overflow: hidden;
+  }
+
+  .logo a {
+    background-position: 0 -29px;
+  }
+
+  .main-nav li {
+    a {
+      border-bottom: 4px solid transparent;
+      color: #969fa4;
+    }
+
+    &.active a {
+      color: #3dc0e6;
+    }
+  }
+}

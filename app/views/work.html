@@ -1,0 +1,52 @@
+<section class="page-phrase sticky-cover" change-menu>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1 id="page-title">Our work speaks for itself</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="page-subtitle" class="sticky-cover">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p>We don't rely on cold-calling to get new business, <br class="hide-xs">it's all word-of-mouth recommendations
+          for us.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div ng-controller="GalleryCtrl as gallery">
+  <section id="work-gallery" class="sticky-cover">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="gallery-row clearfix">
+            <a ng-repeat="item in gallery.items" data-target="#gallery-item-{{$index + 1}}" class="gallery-item"
+               data-toggle="modal">
+              <span class="img-wrapper">
+                <img ng-src="images/gallery/thumbnails/gallery-item-{{$index + 1}}.jpg" alt="">
+                <span class="overlay">
+                  <img ng-src="images/gallery/logos/gallery-item-{{$index + 1}}.png" alt="">
+                </span>
+              </span>
+              <h5 class="ng-cloak">{{item.title}}</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div ng-repeat="item in gallery.items" class="modal fade" id="gallery-item-{{$index + 1}}" tabindex="-1" role="dialog"
+       aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="gallery-big">
+        <button type="button" class="close show-xs" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+          class="sr-only">Close</span></button>
+        <img ng-src="images/gallery/big/{{$index + 1}}.jpg" alt="{{item.title}}">
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="ng-cloak" ng-include src="'views/includes/footer.html'"></footer>

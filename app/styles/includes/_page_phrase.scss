@@ -1,0 +1,38 @@
+/***************************
+****************************
+Page Phrase Styles
+****************************
+***************************/
+
+.page-phrase {
+  background: url("../images/g-3.png") repeat-x fixed 0 0 #46d9e2;
+  height: 227px;
+  padding-top: 115px;
+
+  @media #{$xs} {
+    padding-top: 105px;
+  }
+
+  h1 {
+    color: #ffffff;
+    font-size: 53px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    text-align: center;
+
+    @media #{$small} {
+      font-size: 49px;
+    }
+
+    @media #{$xs} {
+      font-size: 35px;
+      line-height: normal;
+    }
+  }
+}
+
+.services-page .page-phrase {
+  height: 298px;
+  margin-bottom: -77px;
+}

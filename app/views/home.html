@@ -89,9 +89,10 @@
 
           <div id="carousel-recent-work">
             <div class="item" ng-repeat="item in recent.items" pagination="true" owl-carousel-repeat>
-              <a data-target="#recent-item-{{$index + 1}}" data-toggle="modal"><img class="example"
-                                                                                    ng-src="images/recent-work/big/recent-{{$index + 1}}.png"
-                                                                                    alt=""></a>
+              <a data-target="#recent-item-{{$index + 1}}" data-toggle="modal">
+                <img class="example"
+                     ng-src="images/recent-work/big/recent-{{$index + 1}}.png"
+                     alt=""></a>
               <h4>{{item.title}}</h4>
 
               <p>{{item.description}}</p>
