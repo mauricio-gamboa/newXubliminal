@@ -34,6 +34,10 @@ angular
         templateUrl: 'views/services.html'
       })
 
+      .when('/get-quote', {
+        templateUrl: 'views/get-quote.html'
+      })
+
       .otherwise({
         redirectTo: '/'
       });

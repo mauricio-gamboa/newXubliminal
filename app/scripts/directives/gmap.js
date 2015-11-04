@@ -35,7 +35,7 @@ angular.module('xubliminalApp')
         var marker = new google.maps.Marker({
           position: latlng,
           map: map,
-          icon: 'public/images/marker.png'
+          icon: 'images/marker.png'
         });
       }
     };
