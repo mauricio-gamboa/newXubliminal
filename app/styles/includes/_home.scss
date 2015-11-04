@@ -1,25 +1,3 @@
-.dark {
-  header {
-    background-color: $transparent-white;
-    box-shadow: 0 0 10px -6px black000;
-    border-bottom: none;
-    overflow: hidden;
-  }
-  .logo a {
-    background-position: 0 -29px;
-  }
-  .main-nav li {
-    a {
-      border-bottom: 4px solid transparent;
-      color: $gray-13;
-    }
-
-    &.active a {
-      color: $blue-1;
-    }
-  }
-}
-
 #home-services {
   background-color: white;
   padding: 90px 0;

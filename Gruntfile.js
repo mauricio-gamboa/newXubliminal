@@ -242,7 +242,7 @@ module.exports = function (grunt) {
         src: [
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
           '<%= yeoman.dist %>/styles/{,*/}*.css',
-          '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+          //'<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
           '<%= yeoman.dist %>/styles/fonts/*'
         ]
       }
@@ -394,8 +394,10 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
-            'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*'
+            'images/**/*.*',
+            'styles/fonts/{,*/}*.*',
+            'data/{,*/}*.*',
+            '*.php'
           ]
         }, {
           expand: true,
@@ -413,7 +415,19 @@ module.exports = function (grunt) {
           cwd: '.',
           src: 'bower_components/font-awesome/fonts/*',
           dest: '<%= yeoman.dist %>'
-        }]
+        }, {
+          expand: true,
+          dot: true,
+          cwd: '.',
+          src: 'bower_components/OwlCarousel/owl-carousel/*',
+          dest: '<%= yeoman.dist %>'
+        }, {
+            expand: true,
+            dot: true,
+            cwd: '.',
+            src: 'bower_components/PHPMailer/*',
+            dest: '<%= yeoman.dist %>'
+          }]
       },
       styles: {
         expand: true,
