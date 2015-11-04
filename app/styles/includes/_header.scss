@@ -1,0 +1,97 @@
+.logo {
+  a {
+    background: url("../images/logo.png") no-repeat scroll 0 0 $transparent-black;
+    display: block;
+    height: 29px;
+    text-indent: -9999px;
+    width: 155px;
+    -webkit-transition-property: width;
+    -o-transition-property: width;
+    transition-property: width;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+}
+
+header {
+  height: 49px;
+  padding: 10px 0;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  -webkit-transition-property: background-color, height;
+  -o-transition-property: background-color, height;
+  transition-property: background-color, height;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+
+  .logo {
+    float: left;
+    -webkit-transition-property: margin-top;
+    -o-transition-property: margin-top;
+    transition-property: margin-top;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+
+    @media #{$xs} {
+      float: none;
+    }
+
+    a {
+      @media #{$xs} {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.dark {
+  header {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px -6px #000000;
+    border-bottom: none;
+    overflow: hidden;
+  }
+
+  .logo a {
+    background-position: 0 -29px;
+  }
+
+  .main-nav {
+    li {
+      a {
+        border-bottom: 4px solid transparent;
+        color: #969fa4;
+      }
+
+      &.active {
+        a {
+          color: #3dc0e6;
+        }
+      }
+    }
+  }
+}

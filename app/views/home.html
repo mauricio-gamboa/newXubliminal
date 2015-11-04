@@ -1,0 +1,205 @@
+<section id="home-top" class="sticky-cover ng-cloak color-0" full-height scroll change-menu>
+  <div class="bgs">
+    <div class="bg bg1 show"></div>
+  </div>
+  <div class="circle"></div>
+  <div class="clouds clouds-3"></div>
+  <div class="clouds clouds-2"></div>
+  <div class="clouds clouds-1"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="home-carousel" class="carousel slide carousel-fade" home-carousel>
+          <ol class="carousel-indicators">
+            <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#home-carousel" data-slide-to="1"></li>
+            <li data-target="#home-carousel" data-slide-to="2"></li>
+            <li data-target="#home-carousel" data-slide-to="3"></li>
+            <li data-target="#home-carousel" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="item-wrapper">
+                <img src="images/home-slider/1.png" alt="">
+                <a class="btn-5" href="#/get-quote">Get A Quote</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-wrapper">
+                <img src="images/home-slider/2.png" alt="">
+                <a class="btn-5" href="#/services/creative-designs">Creative Designs</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-wrapper">
+                <img src="images/home-slider/3.png" alt="">
+                <a class="btn-5" href="#/services/web-design">Web Design</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-wrapper">
+                <img src="images/home-slider/4.png" alt="">
+                <a class="btn-5" href="#/services/mobile-app-design">Mobile App Design</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-wrapper">
+                <img src="images/home-slider/5.png" alt="">
+                <a class="btn-5" href="#/work">Our Work</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-down">
+          <a href="" class="animated" bounce>Scroll Down</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="home-services" class="sticky-cover" ng-controller="ServicesCtrl as services">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h2>We are a High-End Digital Agency</h2>
+
+        <p>We are the very best professionals conceiving projects that make a difference</p>
+
+        <div class="home-services-wrapper clearfix">
+          <div class="home-services" ng-repeat="service in services.services">
+            <img ng-src="images/services-{{$index + 1}}.png" alt="">
+            <h4>{{service.title}}</h4>
+
+            <p>{{service.smallDescription}}</p>
+            <a class="btn-4" href="#/services/{{service.link}}"><i class="fa fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div ng-controller="RecentworkCtrl as recent">
+  <section id="recent-work" class="home-carousel sticky-cover">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2>Recent Work</h2>
+
+          <div id="carousel-recent-work">
+            <div class="item" ng-repeat="item in recent.items" pagination="true" owl-carousel-repeat>
+              <a data-target="#recent-item-{{$index + 1}}" data-toggle="modal">
+                <img class="example"
+                     ng-src="images/recent-work/big/recent-{{$index + 1}}.png"
+                     alt=""></a>
+              <h4>{{item.title}}</h4>
+
+              <p>{{item.description}}</p>
+              <img class="logo" ng-src="images/recent-work/logos/{{ $index + 1 }}.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div ng-repeat="item in recent.items" class="modal fade" id="recent-item-{{$index + 1}}" tabindex="-1" role="dialog"
+       aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="gallery-big">
+        <button type="button" class="close show-xs" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+          class="sr-only">Close</span></button>
+        <img ng-src="images/recent-work/modals/{{$index + 1}}.jpg" alt="{{item.title}}">
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="clients" class="home-carousel sticky-cover" ng-controller="TestimonialsCtrl as testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h2>Clients love us</h2>
+
+        <div id="carousel-clients" class="owl-carousel">
+          <div ng-repeat="testimonial in testimonials.testimonials" class="item" pagination="false" owl-carousel-repeat>
+            <blockquote>"{{testimonial.testimonial}}"</blockquote>
+            <div>
+              <p>{{testimonial.company}}</p>
+
+              <p>{{testimonial.position}}</p>
+
+              <p><span>{{testimonial.place}}</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="brands" class="sticky-cover">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="brands-wrapper" class="clearfix">
+          <div id="brands-carousel" class="owl-carousel" owl-carousel-brands>
+            <div class="single-brand brand-1"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-2"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-3"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-4"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-5"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-6"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-7"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-8"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-9"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-10"><img src="images/dot-3.png" alt=""></div>
+            <!-- <div class="single-brand brand-11"><img src="images/dot-3.png" alt=""></div> -->
+            <div class="single-brand brand-12"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-13"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-14"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-15"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-16"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-17"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-18"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-19"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-20"><img src="images/dot-3.png" alt=""></div>
+            <div class="single-brand brand-21"><img src="images/dot-3.png" alt=""></div>
+          </div>
+        </div>
+        <div id="brands-bottom" class="clearfix">
+          <div class="brand-bottom-1">
+            <span>
+              <span class="icon show-xs"></span>
+              <strong val="2365" interval="20000" increase></strong>
+              <span>Projects Done</span>
+            </span>
+          </div>
+          <div class="brand-bottom-2">
+            <span>
+              <span class="icon show-xs"></span>
+              <strong val="24586" interval="8000" increase></strong>
+              <span>Cups of Coffee</span>
+            </span>
+          </div>
+          <div class="brand-bottom-3">
+            <span>
+              <span class="icon show-xs"></span>
+              <strong val="2457586" interval="1500" increase></strong>
+              <span>Lines of Code</span>
+            </span>
+          </div>
+          <div class="brand-bottom-4">
+            <span>
+              <span class="icon show-xs"></span>
+              <strong val="2457586154" interval="1500" increase></strong>
+              <span>Pixels Created</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="ng-cloak" ng-include src="'views/includes/footer.html'"></footer>

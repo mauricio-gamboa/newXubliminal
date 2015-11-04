@@ -1,0 +1,70 @@
+.btn-2 {
+  background-color: $green-1;
+  border: medium none;
+  border-radius: 50px;
+  color: white;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $green-2;
+  }
+
+  &:link, &:visited, &:hover, &:active {
+    color: white !important;
+  }
+
+  &:disabled {
+    background-color: $green-1;
+    opacity: 0.7;
+
+    &:hover {
+      background-color: $green-1;
+      opacity: 0.7;
+    }
+  }
+}
+
+.btn-3 {
+  background: url("../images/btn-3-image.png") no-repeat scroll 0 0 $transparent-black;
+}
+
+.btn-4 {
+  background-color: $green-1;
+  border-radius: 25px;
+  color: white;
+  display: inline-block;
+  font-size: 21px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  width: 38px;
+
+  i {
+    position: relative;
+    left: 1px;
+  }
+
+  &:hover {
+    background-color: $green-2;
+    color: white;
+  }
+}
+
+.btn-5 {
+  background: url("../images/btn-5.png") no-repeat 0 0;
+  display: block;
+  height: 54px;
+  width: 250px;
+  line-height: 54px;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+
+  &:hover {
+    color: white;
+  }
+}

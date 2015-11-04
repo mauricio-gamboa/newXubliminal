@@ -1,0 +1,206 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$fa-font-path: "../bower_components/font-awesome/fonts/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "font-awesome/scss/font-awesome.scss";
+// endbower
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+@import "includes/colors";
+
+@import "includes/animations";
+
+@import "includes/buttons";
+
+@import "includes/responsive";
+
+@import "includes/navigation";
+
+@import "includes/header";
+
+@import "includes/brands_bottom";
+
+@import "includes/recent_work";
+
+@import "includes/clients";
+
+@import "includes/home";
+
+@import "includes/footer";
+
+@import "includes/page_phrase";
+
+@import "includes/gallery";
+
+@import "includes/work_page";
+
+@import "includes/services_page";
+
+@import "includes/expect";
+
+@import "includes/quote_page";
+
+/***************************
+****************************
+General Styles
+****************************
+***************************/
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: $gray-1;
+  color: black;
+  padding: 0.2em 0;
+}
+
+body {
+  background-color: white;
+  color: $gray-2;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 444px;
+
+  @media #{$xs} {
+    padding-bottom: 0;
+    overflow-x: hidden;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $gray-3;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0;
+}
+
+h2, .h2 {
+  font-size: 32px;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: $gray-3;
+
+  &:active, &:hover, &:focus {
+    outline: none;
+    text-decoration: none;
+    color: $gray-3;
+  }
+}
+
+p {
+  line-height: 27px;
+}
+
+strong {
+  font-weight: normal;
+}
+
+.sticky-cover {
+  position: relative;
+  z-index: 97;
+}
+
+.top-gray-border {
+  border-top: 1px solid $gray-4;
+}
+
+.bottom-gray-border {
+  border-bottom: 1px solid $gray-4;
+}
+
+.ng-enter {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  opacity: 0;
+}
+
+.ng-enter-active {
+  opacity: 1;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.animated {
+  -webkit-animation: 1s ease both;
+  -moz-animation: 1s ease both;
+  -ms-animation: 1s ease both;
+  -o-animation: 1s ease both;
+  animation: 1s ease both;
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -ms-animation-name: bounce;
+  -o-animation-name: bounce;
+  animation-name: bounce;
+}
+
+.modal-backdrop {
+  &.in {
+    opacity: 0.8;
+  }
+}
+
+.owl-controls {
+  .owl-pagination {
+    .owl-page {
+      span {
+        width: 8px;
+        height: 8px;
+        background-color: $gray-5;
+        border: none;
+        margin: 0 6px;
+      }
+
+      &.active {
+        span {
+          background-color: $green-1;
+          height: 14px;
+          width: 14px;
+        }
+      }
+    }
+  }
+}
+
+#page-subtitle {
+  background-color: #fff;
+  color: #636363;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: normal;
+  padding: 30px 0;
+  text-align: center;
+
+  @media #{$xs} {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  h2 {
+    font-size: 45px;
+    color: #636363;
+
+    @media #{$xs} {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    color: #636363;
+    margin: 0;
+    line-height: 32px;
+  }
+}

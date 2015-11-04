@@ -1,0 +1,188 @@
+<section class="page-phrase sticky-cover hide-xs" change-menu>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1 class="page-title">Mind-blowing handcraft services</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<div ng-controller="ServicesCtrl as services">
+  <section class="page-phrase sticky-cover show-xs" change-menu>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1 class="page-title">{{services.service.title}}</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="service-tabs" class="sticky-cover service-tabs">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <ul class="xub-nav hide-xs">
+            <li ng-repeat="service in services.services" ng-class="{active: $index == services.serviceIndex}">
+              <a href="#/services/{{service.link}}">
+                <span class="tab-icon-{{$index + 1}}"></span>
+                <span class="service-name">{{service.title}}</span>
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div>
+              <div class="service service-1 clearfix">
+                <div class="subtitle"><h2>{{services.service.featuresTitle}}</h2></div>
+                <div class="service-text">
+                  <p>{{services.service.description}}</p>
+                </div>
+              </div>
+              <div class="service-features">
+                <div class="service-features-container clearfix">
+                  <div ng-repeat="feature in services.service.features" class="service-feature">
+                    <img ng-src="images/service-{{services.serviceIndex * 1 + 1}}-feature-{{$index + 1}}.png"
+                         alt="">
+                    <h4>{{feature.title}}</h4>
+
+                    <p>{{feature.description}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="second-description">
+                <div><p>{{services.service.secondDescription}}</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div ng-controller="GalleryCtrl as serviceGallery">
+  <section id="services-gallery" class="sticky-cover">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2>Some projects we have worked on</h2>
+
+          <div class="gallery">
+            <div id="the-services-gallery" class="owl-carousel">
+              <a ng-repeat="item in serviceGallery.items | limitTo:12" data-target="#gallery-item-{{$index + 1}}"
+                 class="gallery-item" data-toggle="modal" owl-carousel-services>
+                <span class="img-wrapper">
+                  <img ng-src="images/gallery/thumbnails/gallery-item-{{$index + 1}}.jpg" alt="">
+                  <span class="overlay">
+                    <img ng-src="images/gallery/logos/gallery-item-{{$index + 1}}.png" alt="">
+                  </span>
+                </span>
+                <h5 class="ng-cloak">{{item.title}}</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div ng-repeat="item in serviceGallery.items | limitTo:12" class="modal fade" id="gallery-item-{{$index + 1}}"
+       tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="gallery-big">
+        <button type="button" class="close show-xs" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+          class="sr-only">Close</span></button>
+        <img ng-src="images/gallery/big/{{$index + 1}}.jpg" alt="{{item.title}}">
+      </div>
+    </div>
+  </div>
+</div>
+<section id="expect" class="sticky-cover">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h2>What to expect from us</h2>
+
+        <div class="expect-items clearfix hide-xs">
+          <div class="expect-item">
+            <img src="images/expect-item-1.png" alt="">
+            <h4>Superior Quality</h4>
+
+            <p>We only provide World-class design services that will Exceed your expectations, taking your projects to
+              the next level.</p>
+          </div>
+          <div class="expect-item">
+            <img src="images/expect-item-2.png" alt="">
+            <h4>Someone who really cares</h4>
+
+            <p>We believe in friendship, loyalty and building long lasting business relationships with our clients. You
+              know how to reach us.</p>
+          </div>
+          <div class="expect-item">
+            <img src="images/expect-item-3.png" alt="">
+            <h4>Guaranteed work</h4>
+
+            <p>Our clients' 100% satisfaction is our ultimate goal and we strive for excellence on each and every
+              project we deliver.</p>
+          </div>
+          <div class="expect-item">
+            <img src="images/expect-item-4.png" alt="">
+            <h4>Outstanding Support</h4>
+
+            <p>We pride ourselves in going beyond the normal scope of our responsibilities. We will work on your
+              projects with our blood and sweat.</p>
+          </div>
+        </div>
+        <div class="gallery show-xs">
+          <div id="expect-gallery" class="owl-carousel" what-to-expect-owl>
+            <div class="item expect-item">
+              <img src="images/expect-item-1.png" alt="">
+              <h4>Superior Quality</h4>
+
+              <p>We only provide World-class design services that will Exceed your expectations, taking your projects to
+                the next level.</p>
+            </div>
+            <div class="item expect-item">
+              <img src="images/expect-item-2.png" alt="">
+              <h4>Someone who really cares</h4>
+
+              <p>We believe in friendship, loyalty and building long lasting business relationships with our clients.
+                You know how to reach us.</p>
+            </div>
+            <div class="item expect-item">
+              <img src="images/expect-item-3.png" alt="">
+              <h4>Guaranteed work</h4>
+
+              <p>Our clients' 100% satisfaction is our ultimate goal and we strive for excellence on each and every
+                project we deliver.</p>
+            </div>
+            <div class="item expect-item">
+              <img src="images/expect-item-4.png" alt="">
+              <h4>Outstanding Support</h4>
+
+              <p>We pride ourselves in going beyond the normal scope of our responsibilities. We will work on your
+                projects with our blood and sweat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div ng-controller="ServicesCtrl as bottomservices">
+  <section id="services-links-bottom" class="sticky-cover show-xs services-links-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h2>Other Services</h2>
+          <ul class="xub-nav">
+            <li ng-repeat="service in bottomservices.services" ng-hide="$index == bottomservices.serviceIndex">
+              <a href="#/services/{{service.link}}">
+                <span class="tab-icon-{{$index + 1}}"></span>
+                <span class="service-name">{{service.title}}</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<footer class="ng-cloak" ng-include src="'views/includes/footer.html'"></footer>
